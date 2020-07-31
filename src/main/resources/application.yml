@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: "代码生成工具"
+info:
+  version: 0.0.1-SNAPSHOT
+  groupId: com.zujuan
+  artifactId: mp-generator
+generator-config:
+  db-info:
+    jdbc-url: jdbc:mysql://10.1.25.43:3306/homework?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver         #com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: zujuan
+    password: 21cn.com
+    table-names: "work_temp,work_temp_ques"   #多个表名用英文逗号分隔 ※
+  use-lombok: true               #目标实体是否启用lombok
+  author: "author"               #实体注释上的作者
+  entity-subfix: "DO"            #实体后缀名 如无后缀填""
+  output-path: "d:\\output"      #文件输出路径
